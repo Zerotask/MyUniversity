@@ -1,0 +1,1 @@
+﻿MyUniversity is an example API project using GraphQL and MongoDB.
