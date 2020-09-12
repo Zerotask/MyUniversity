@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MyUniversity.Data;
 using MyUniversity.Data.Entities;
@@ -9,9 +10,9 @@ namespace MyUniversity.Repositories
 {
     public class CourseRepository
     {
-        private MyUniversityDataContext _dataContext;
+        private DbContext _dataContext;
 
-        public CourseRepository(MyUniversityDataContext dataContext)
+        public CourseRepository(DbContext dataContext)
         {
             _dataContext = dataContext;
         }
